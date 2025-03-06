@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol Parnofiello</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'SF Pro Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f5f5f7;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .text {
+            max-width: 500px;
+            text-align: left;
+        }
+        .text h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .text p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #444;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            width: 250px;
+            height: 250px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+        }
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .text {
+                flex: 1;
+            }
+            .image {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sol Parnofiello</h1>
+        <div class="content">
+            <div class="text">
+                <h2>Esta es mi historia</h2>
+                <p>Soy licenciada en Ciencias de la Comunicación por la Universidad de Buenos Aires. Escribí el primer libro sobre la disciplina para el mundo hispano: "UX Writing en español. El ABC de la disciplina con Ñ". Hoy soy UX Manager con foco en interfaces conversacionales cognitivas. Desde 2012 trabajo en experiencia de usuario en las principales organizaciones de América Latina (Mercado Libre, Ministerio de Modernización de Argentina, ICBC Bank). Soy fundadora de la comunidad UX Writing en español y de Intuitiva UX, consultora especializada en investigación y contenidos para experiencia de usuario.</p>
+            </div>
+            <div class="image">
+               <img src="https://raw.githubusercontent.com/solpar/solparnofiello.github.io/main/Sol%20Parnofiello%20foto.jpg" alt="Sol Parnofiello">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/solparnofiello" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto: sol@intuitivaux.com.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/uxwritinges" target="_blank"><i class="fab fa-instagram"></i></a>
+    </footer>
+</body>
+</html>
