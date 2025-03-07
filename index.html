@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sol Parnofiello.</title>
+    <title>Sol Parnofiello</title>
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Sol Parnofiello">
+    <meta property="og:description" content="Licenciada en Ciencias de la Comunicación, autora del primer libro sobre UX writing en español. Fundadora de la comunidad UX Writing en español.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/solpar/solpar.github.io/main/Sol%20Parnofiello%20foto.jpg">
+    <meta property="og:url" content="https://solpar.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sol Parnofiello">
+    
+    <meta name="twitter:title" content="Sol Parnofiello">
+    <meta name="twitter:description" content="Licenciada en Ciencias de la Comunicación, autora del primer libro sobre UX writing en español. Fundadora de la comunidad UX Writing en español.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/solpar/solpar.github.io/main/Sol%20Parnofiello%20foto.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;700&display=swap');
@@ -22,7 +36,7 @@
         }
         .container {
             max-width: 900px;
-            margin: 40px;
+            margin: 20px;
             padding: 20px;
             background-color: #f5f5f7;
             border-radius: 20px;
@@ -33,7 +47,7 @@
         h1 {
             font-size: 3em;
             font-weight: bold;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             border-right: 3px solid black;
             white-space: nowrap;
             overflow: hidden;
@@ -85,6 +99,7 @@
             background-color: #ff8c00;
             padding: 20px;
             border-radius: 10px;
+            flex-wrap: wrap;
         }
         .card {
             background-color: #f5f5f7;
@@ -92,6 +107,8 @@
             border-radius: 10px;
             text-align: center;
             max-width: 300px;
+            flex: 1;
+            margin: 10px;
         }
         .card img {
             width: 100%;
@@ -108,19 +125,46 @@
             color: #000;
             font-size: 24px;
         }
-        @media (min-width: 768px) {
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
             .content {
-                flex-direction: row;
+                flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
+                gap: 20px;
             }
             .text {
-                flex: 1;
+                max-width: 100%;
+                text-align: center;
             }
-            .image {
-                flex: 1;
-                display: flex;
-                justify-content: center;
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text p {
+                font-size: 1em;
+            }
+            .image img {
+                width: 200px;
+                height: 200px;
+            }
+            .footer a {
+                font-size: 20px;
             }
         }
     </style>
@@ -141,18 +185,13 @@
     
     <div class="cards">
         <div class="card">
-    
             <h3><a href="https://www.mercadolibre.com.ar/libro-ux-writing-en-espanol-el-abc-de-la-disciplina-con-n/up/MLAU200251434">El libro en Mercado Libre</a></h3>
         </div>
         <div class="card">
-    
-        <h3><a href="https://www.amazon.com/-/es/Writing-espa%C3%B1ol-ABC-disciplina-Spanish/dp/9878704858">El libro en Amazon</a></h3>
+            <h3><a href="https://www.amazon.com/-/es/Writing-espa%C3%B1ol-ABC-disciplina-Spanish/dp/9878704858">El libro en Amazon</a></h3>
         </div>
         <div class="card">
-      
-            <h3><a href="   https://uxwritingenespanol.tiendup.com/curso/seminario-de-ux-writing-en-espanol-inicial-por-sol-parnofiello/">Seminario sobre UX Writing</a></h3>
-            
-       
+            <h3><a href="https://uxwritingenespanol.tiendup.com/curso/seminario-de-ux-writing-en-espanol-inicial-por-sol-parnofiello/">Seminario sobre UX Writing</a></h3>
         </div>
     </div>
     
