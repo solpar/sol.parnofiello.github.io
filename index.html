@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sol Parnofiello.</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="https://raw.githubusercontent.com/solpar/solpar.github.io/main/Sol%20Parnofiello%20foto.jpg" type="image/png">
+    <title>Sol Parnofiello</title>
     
     <!-- Meta tags para redes sociales -->
     <meta property="og:title" content="Sol Parnofiello">
@@ -173,25 +170,12 @@
     </style>
 </head>
 <body>
-    <!-- Selector de idioma -->
-    <div class="language-selector">
-        <a href="?lang=es" style="font-size: 20px; margin: 10px;">Español</a> | <a href="?lang=en" style="font-size: 20px; margin: 10px;">English</a>
-    </div>
-
     <div class="container">
-        <h1 id="typing-text">Sol Parnofiello.</h1>
+        <h1 id="typing-text">Sol Parnofiello</h1>
         <div class="content">
-            <div class="text" id="content-text">
-                <!-- Texto en español -->
-                <div class="es">
-                    <h2>Esta es mi historia</h2>
-                    <p><b>Soy licenciada en Ciencias de la Comunicación por la Universidad de Buenos Aires</b>. Escribí el primer libro sobre UX writing para el mundo hispano: "UX Writing en español. El ABC de la disciplina con Ñ". Hoy soy UX Manager con foco en interfaces conversacionales cognitivas. <b>Desde 2012 trabajo en experiencia de usuario en las principales organizaciones de América Latina, y especialmente en el sector financiero</b> (Mercado Libre, Ministerio de Modernización de Argentina, ICBC Bank). Soy fundadora de la comunidad UX Writing en español y de Intuitiva UX, consultora especializada en investigación y contenidos para experiencia de usuario.</p>
-                </div>
-                <!-- Texto en inglés -->
-                <div class="en" style="display:none;">
-                    <h2>This is my story</h2>
-                    <p><b>I hold a degree in Communication Sciences from the University of Buenos Aires</b>. I wrote the first book on UX writing for the Spanish-speaking world: "UX Writing in Spanish. The ABC of the Discipline with Ñ". Today, I am a UX Manager with a focus on cognitive conversational interfaces. <b>Since 2012, I have been working in user experience for major organizations in Latin America, especially in the financial sector</b> (Mercado Libre, Ministry of Modernization of Argentina, ICBC Bank). I am the founder of the Spanish-speaking UX Writing community and Intuitiva UX, a consultancy specializing in user experience research and content.</p>
-                </div>
+            <div class="text">
+                <h2>Esta es mi historia</h2>
+                <p><b>Soy licenciada en Ciencias de la Comunicación por la Universidad de Buenos Aires</b>. Escribí el primer libro sobre UX writing para el mundo hispano: "UX Writing en español. El ABC de la disciplina con Ñ". Hoy soy UX Manager con foco en interfaces conversacionales cognitivas. <b>Desde 2012 trabajo en experiencia de usuario en las principales organizaciones de América Latina, y especialmente en el sector financiero</b> (Mercado Libre, Ministerio de Modernización de Argentina, ICBC Bank). Soy fundadora de la comunidad UX Writing en español y de Intuitiva UX, consultora especializada en investigación y contenidos para experiencia de usuario.</p>
             </div>
             <div class="image">
                <img src="https://raw.githubusercontent.com/solpar/solpar.github.io/main/Sol%20Parnofiello%20foto.jpg" alt="Sol Parnofiello">
@@ -216,19 +200,5 @@
         <a href="mailto:sol@intuitivaux.com"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://www.instagram.com/uxwritinges" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     </footer>
-
-    <script>
-        // Cambiar idioma al español o inglés
-        const urlParams = new URLSearchParams(window.location.search);
-        const lang = urlParams.get('lang') || 'es';
-
-        if (lang === 'en') {
-            document.querySelectorAll('.es').forEach(el => el.style.display = 'none');
-            document.querySelectorAll('.en').forEach(el => el.style.display = 'block');
-        } else {
-            document.querySelectorAll('.es').forEach(el => el.style.display = 'block');
-            document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
-        }
-    </script>
 </body>
 </html>
